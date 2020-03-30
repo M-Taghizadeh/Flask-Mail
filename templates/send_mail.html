@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+</head>
+<body style="text-align: center;">
+    <h1>Send Email</h1>
+    <form action="{{ url_for('send_mail')}}", method="POST">
+        <input placeholder="subject" type="text" name="subject"><br>
+        <textarea style= "resize: none;" id="w3mission" rows="10" cols="100" name="body" placeholder="Type Your Message.."></textarea><br>
+        <input class="button" type="submit" value="Send Email"><br>
+    </form>
+</body>
+</html>
